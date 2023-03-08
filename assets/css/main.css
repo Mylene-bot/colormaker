@@ -46,7 +46,17 @@ h3,
 h4,
 h5,
 h6 {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
   font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  transition: 0.3s;
 }
 h6{
   color: #37076e;
@@ -1297,24 +1307,47 @@ h6{
     font-size: 32px;
   }
 }
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
 .animated-text-down {
-  animation: 0.50s ease-in-out 1 normal both running fadeInDown;
-  color: #000000;
-            background-repeat: no-repeat;
-            -webkit-animation-duration: 5s;
-            animation-duration: 5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+/*=== FADE IN DOWN ===*/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 @keyframes fadeInDown {
   0% {
-     opacity: 0;
-     transform: translateY(-20px);
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-     opacity: 1;
-     transform: translateY(0);
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
-} 
+}
 
 /*--------------------------------------------------------------
 # Footer
