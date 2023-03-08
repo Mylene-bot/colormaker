@@ -48,7 +48,6 @@ h5,
 h6 {
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
   font-family: var(--font-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
