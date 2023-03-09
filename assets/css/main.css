@@ -1320,27 +1320,27 @@ h6{
 }
 /*=== FADE IN DOWN ===*/
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateX(-80px);
  }
  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
  }
 }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateX(0px);
  }
  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(80);
  }
 }
 
