@@ -8,7 +8,6 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -25,11 +24,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
 <body>
-
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -41,13 +38,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">A propos</a></li>
           <li><a href="atelier.html">L'atelier</a></li>
-          <li class="dropdown"><a href="#"><span>Galerie</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Galerie</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="art.html">Art</a></li>
-              <li><a href="mobilier.html">Mobilier/Agencement</a></li>
+              <li><a href="mobilier.html" class="active">Mobilier/Agencement</a></li>
               <li><a href="particulier.html">Particulier</a></li>
             </ul>
           </li>
@@ -55,6 +52,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
+
 
       <div class="header-social-links">
         <a class="instagram" href="https://www.instagram.com/lunatic_nono_/?hl=fr"><i class="bi bi-instagram"></i></a>
@@ -74,67 +72,52 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Contact</h2>
-            
+            <h2>Mobilier</h2>
+            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
           </div>
         </div>
       </div>
     </div><!-- End Page Header -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
 
         <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h4>Adresse :</h4>
-                <p>2 Impasse du Clos Neuf</p>
-                <p>44680 SAINTE-PAZANNE</p>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h4>Email :</h4>
-                <a href="mailto:contact@colormaker.com">contact@colormaker.com</a>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
-              <div>
-                <h4>Téléphone :</h4>
-                <a href="tel:+33 6 00 00 00 00">+33 6 00 00 00 00</a>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          </div><!-- End Gallery Item -->
+         
 
         </div>
 
-        <div class="row" style="margin-top: 40px;">
-          <!--Google map-->
-          <div id="map-container-google-2" class="map z-depth-1-half map-container-2">
-              <iframe src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=2%20bis%20impasse%20du%20clos%20neuf+(COLOR%20MAKER)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0"
-              style="border:0;height: 40vh;" allowfullscreen></iframe>
-          </div>
       </div>
-      </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Gallery Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>COLOR MAKER</span></strong>. All Rights Reserved
+      </div>
+
     </div>
   </footer><!-- End Footer -->
 
@@ -149,6 +132,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
